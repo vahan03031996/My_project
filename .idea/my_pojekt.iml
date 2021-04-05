@@ -114,6 +114,9 @@
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/tymon/jwt-auth" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/namshi/jose" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/lcobucci/jwt" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

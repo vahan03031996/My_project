@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group([
-    'middleware' => "api"
-    ] , function () {
-    Route::get('/products' , [ProductController::class, 'index' ] );
+    'middleware' => 'api',
+    'prefix' => 'auth'
+], function () {
+    Route::post('signup', [AuthController::class,'signup']);
+    Route::post('edit', [AuthController::class,'edit']);
+
+    Route::post('login', [AuthController::class,'login']);
+    Route::post('logout', [AuthController::class,'logout']);
+    Route::post('refresh', [AuthController::class,'refresh']);
+    Route::post('me', [AuthController::class,'me']);
 });

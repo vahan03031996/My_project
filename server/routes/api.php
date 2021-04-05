@@ -21,10 +21,11 @@ Route::group([
     'prefix' => 'auth'
 ], function () {
     Route::post('signup', [AuthController::class,'signup']);
-    Route::post('edit', [AuthController::class,'edit']);
-
+//    Route::post('edit', [AuthController::class,'edit']);
     Route::post('login', [AuthController::class,'login']);
     Route::post('logout', [AuthController::class,'logout']);
-    Route::post('refresh', [AuthController::class,'refresh']);
+//    Route::post('refresh', [AuthController::class,'refresh']);
     Route::post('me', [AuthController::class,'me']);
+    Route::get('/products' , [ProductController::class, 'index' ] );
+    Route::post('/products' , [ProductController::class, 'create' ] );
 });

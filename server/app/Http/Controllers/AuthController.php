@@ -23,6 +23,7 @@ class AuthController extends Controller
 
     public  function signup(Request $request){
 
+
         $rules = [
             'name' => 'required|max:20|string',
             'surname' => 'required|max:20|string',
@@ -36,11 +37,9 @@ class AuthController extends Controller
             return  response($errors, 419);
         }else {
             User::create([
-                'image' => $request->image,
                 'name' => $request->name,
                 'surname' => $request->surname,
                 'email' => $request->email,
-                'age' => $request->age,
                 'password' => Hash::make($request->password)
             ]);
             return response('success', 200);

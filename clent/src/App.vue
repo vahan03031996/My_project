@@ -1,31 +1,41 @@
 <template>
   <div id="app">
-    <div v-for="product in products">
-      <p>name: {{product.name}}</p>
-      <p>name: {{product.price}}</p>
-      <p>name: {{product.count}}</p>
-      <p>name: {{product.views}}</p>
-      <p>name: {{product.description}}</p>
-    </div>
-    <router-view/>
+    <Menu/>
+<router-view/>
   </div>
 </template>
 
 <script>
 
+import Menu from "./components/globals/Menu"
+
 export default {
+
   name: 'App',
+  components: {
+    Menu
+  },
   data() {
     return {
-      products: []
+      products: [],
+      setProduct: {
+
+      }
     }
   },
   mounted() {
     this.getProducts()
   },
   methods: {
-    getProducts(){
-
+    getProducts() {
+      axios
+        .get('http://127.0.0.1:8000/api/products')
+        .then(response => (this.products = response.data));
+    },
+    setProducts() {
+      axios
+        .post('http://127.0.0.1:8000/api/products' , this.setProduct)
+        .then(response => (this.products = response.data));
     }
   }
 }

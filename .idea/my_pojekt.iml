@@ -114,9 +114,25 @@
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/phpoption/phpoption" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/nunomaduro/collision" />
+<<<<<<< HEAD
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/namshi/jose" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/lcobucci/jwt" />
+=======
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/defuse/php-encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/php-http/message-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/league/event" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/league/oauth2-server" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/symfony/psr-http-message-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/nyholm/psr7" />
+>>>>>>> 397de830301b42389a2e7f5007747894fe626a07
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

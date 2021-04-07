@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import mixin from './mixin'
 import axios from "axios";
 import VueAxios from 'vue-axios'
 
@@ -13,6 +13,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  mixin,
   router,
   components: { App },
   template: '<App/>'
